@@ -1,4 +1,4 @@
-/* ベーススタイル */
+/* index.css */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,69 +6,16 @@ body {
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.header, .footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-}
-
-header h1 {
+.header h1 {
     margin: 0;
+    font-size: 24px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* スマートフォン向けスタイル */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-/* タブレット向けスタイル */
-@media (min-width: 601px) and (max-width: 1024px) {
-    .container {
-        width: 90%;
-    }
-
-    nav ul li {
-        display: inline;
-        margin-right: 15px;
-    }
-}
-
-/* デスクトップ向けスタイル */
-@media (min-width: 1025px) {
-    .container {
-        width: 80%;
-    }
-
-    nav ul li {
-        display: inline;
-        margin-right: 20px;
-    }
-}
+#toc {
+    background-color: #e2e2e2;
