@@ -1,41 +1,50 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
-<title>BMI計算</title>
-<style>
-body {
-  background-color: hsl(50, 100%, 80%);
-  font-family: sans-serif;
-}
-* {
-  margin: 1em;
-}
-textarea {
-  width: 20em;
-  height: 5em;
-}
-</style>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阪公立大学工業高等専門学校</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>大阪公立大学工業高等専門学校</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">学校概要</a></li>
+                    <li><a href="#admissions">入試情報</a></li>
+                    <li><a href="#departments">学科紹介</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-身長<input type="text" id="height">cm<br>
-体重<input type="text" id="weight">kg<br>
-<button id="btn">BMI</button><br>
-<textarea id="output"></textarea><br>
+    <main>
+        <section id="about">
+            <h2>学校概要</h2>
+            <p>大阪公立大学工業高等専門学校は、工業系の専門教育を提供する教育機関です。</p>
+        </section>
 
-<script type="module">
-import { print } from "https://js.sabae.cc/";
+        <section id="admissions">
+            <h2>入試情報</h2>
+            <p>入試に関する情報はこちらからご確認ください。</p>
+        </section>
 
-btn.onclick = () => {
-  const bmi = weight.value / (height.value / 100) ** 2;
-  let s = "";
-  if (bmi < 18.5) {
-    s = "やせ型";
-  } else if (bmi < 25) {
-    s = "標準";
-  } else {
-    s = "肥満";
-  }
-  output.value = `${s}です BMI ${bmi}`;
-};
+        <section id="departments">
+            <h2>学科紹介</h2>
+            <p>各学科の詳細についてはこちらをご覧ください。</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 大阪公立大学工業高等専門学校. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
 </script>
 
 </body>
